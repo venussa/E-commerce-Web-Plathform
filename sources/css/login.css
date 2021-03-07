@@ -1,0 +1,201 @@
+
+@font-face {
+	font-family: 'Segoe UI Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe UI'), url('../sources/font/SogoeR.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Segoe UI Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe UI Italic'), url('../sources/font/SogoeI.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Segoe UI Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe UI Bold'), url('../sources/font/SogoeB.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Segoe UI Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe UI Bold Italic'), url('../sources/font/SogoeBI.woff') format('woff');
+}
+
+*{
+	font-family: Segoe UI Regular;
+}
+
+body{
+	background: #fe4c50;
+}
+
+.box-login{
+	background: #fff;
+	width:300px;
+	padding:10px;
+	padding-top:30px;
+	margin:auto;
+	-webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.21);
+	-moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.21);
+	box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.21);
+	border-radius:5px;
+
+}
+
+.box-login-1{
+	width:600px;
+	padding:10px;
+	margin:auto;
+
+}
+
+.form-input{
+	padding: 10px;
+	width: 93%;
+	border:1px #ddd solid;
+	border-radius: 5px;
+	margin-bottom:10px;
+	font-size:17px;
+}
+
+.form-input:focus{
+	border:1px #cdfadf solid;
+}
+
+.bg-login{
+	width:100%;
+	position: absolute;
+	top:0px;
+	z-index: 0;
+	left:0px;
+}
+
+.title{
+	color: #fff;
+	text-align: center;
+	font-family: 'Segoe UI Bold';
+	font-size:30px;
+	text-shadow: 2px 2px 3px rgba(14,6,4,0.52);
+}
+
+.forgot-title{
+	color: #3a6da1;
+	text-align: center;
+	font-size: 13px;
+}
+
+.bottom-title{
+	color: #fff;
+	text-align: center;
+	font-family: 'Segoe UI Regular';
+	font-size:14px;
+	text-shadow: 2px 2px 3px rgba(14,6,4,0.52);
+}
+
+.btn-green{
+	background: #fe4c50;
+	border:1px #fe4c50 solid;
+	border-radius: 5px;
+	padding:10px;
+	font-size:17px;
+	color:#fff;
+	width: 100%;
+	margin-bottom:10px;
+	margin-top: 10px;
+}
+
+.line-space{
+	border-top:1px #ddd solid;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+.input-title{
+	font-family: 'Segoe UI Bold';
+	color:#434343;
+	margin-top:10px;
+	font-size: 13px;
+}
+/* The container */
+.cb-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.cb-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+  border-radius:5px;
+  border:1px #ddd solid;
+}
+
+/* On mouse-over, add a grey background color */
+.cb-container:hover input ~ .checkmark {
+  border-radius:5px;
+  background-color: #d7eafa;
+  border:1px #ddd solid;
+
+}
+
+/* When the checkbox is checked, add a blue background */
+.cb-container input:checked ~ .checkmark {
+  background-color: #fe4c50;
+  border-radius:5px;
+  border:1px #fe4c50 solid;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cb-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cb-container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
